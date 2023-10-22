@@ -90,20 +90,20 @@ Este tópico irá tratar de maneira mais específica quais são os tipos de inte
 
 **1. Configuração do Bluetooth**:
 
-a. No Raspberry Pi Pico W, certifique-se de que o MicroPython esteja instalado. Você pode usar o MicroPython.uf2 correto e carregá-lo no dispositivo.
+a. No Raspberry Pi Pico W, precisa certificar de que o MicroPython esteja instalado. Você pode usar o MicroPython.uf2 correto e carregá-lo no dispositivo.
 
-b. Crie um programa em MicroPython para ativar a funcionalidade Bluetooth. Um exemplo de código para iniciar o Bluetooth pode ser o seguinte:
+b. É possível criar um programa em MicroPython para ativar a funcionalidade Bluetooth. Um exemplo de código para iniciar o Bluetooth pode ser o seguinte:
 ```
 import bluetooth
 bt = bluetooth.BLE()
 ```
-c. No dispositivo móvel, ative o Bluetooth e pesquise por dispositivos disponíveis. Você deve ver o Raspberry Pi Pico W na lista de dispositivos detectados.
+c. No dispositivo móvel,precisa ativar o Bluetooth e pesquise por dispositivos disponíveis. Você deve ver o Raspberry Pi Pico W na lista de dispositivos detectados.
 
-d. Conecte-se ao Raspberry Pi Pico W a partir do dispositivo móvel e inicie a comunicação via Bluetooth.
+d. Precisa se conectar ao Raspberry Pi Pico W a partir do dispositivo móvel e inicie a comunicação via Bluetooth.
 
 **2. Configuração do Wi-Fi**:
 
-a. No Raspberry Pi Pico W, crie um programa em MicroPython para configurar a conexão Wi-Fi. Por exemplo:
+a. No Raspberry Pi Pico W, precisa criar um programa em MicroPython para configurar a conexão Wi-Fi. Por exemplo:
 ```
 import network ssid = 'RedeArthur'
 password = 'Arthur123' 
@@ -113,13 +113,13 @@ wlan.connect(ssid, password)
 ```
 b. O Raspberry Pi Pico W agora deve estar conectado à rede Wi-Fi especificada.
 
-c. Você pode usar o módulo usocket para criar um servidor TCP ou HTTP que permite que outros dispositivos na rede se comuniquem com o Raspberry Pi Pico W.
+c. Pode usar o módulo usocket para criar um servidor TCP ou HTTP que permite que outros dispositivos na rede se comuniquem com o Raspberry Pi Pico W.
 
 **3. Comunicação em Rede**:
 
-a. A partir de um computador ou outro dispositivo na mesma rede Wi-Fi, você pode se comunicar com o Raspberry Pi Pico W usando o endereço IP atribuído a ele.
+a. A partir de um computador ou outro dispositivo na mesma rede Wi-Fi, pode se comunicar com o Raspberry Pi Pico W usando o endereço IP atribuído a ele.
 
-b. Você pode usar protocolos como HTTP, MQTT, SSH, ou qualquer protocolo que atenda às suas necessidades para transmitir dados entre o Raspberry Pi Pico W e outros sistemas na rede.
+b. Pode usar protocolos como HTTP, MQTT, SSH, ou qualquer protocolo que atenda às necessidades para transmitir dados entre o Raspberry Pi Pico W e outros sistemas na rede.
 
 
 
