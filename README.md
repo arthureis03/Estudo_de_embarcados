@@ -6,9 +6,13 @@ O Raspberry Pi Pico W é uma placa de desenvolvimento baseada no microcontrolado
 
 **Especificações**
 -Microcontrolador: RP2040
+
 -Conectividade: Wi-Fi e Bluetooth LE (exemplo)
+
 -Tensão de Operação: 3,3 V
+
 -Interfaces: GPIO, UART, I2C, SPI, PWM
+
 -Dimensões: 51 X 21 mm
 
  **Pinout Padrão**
