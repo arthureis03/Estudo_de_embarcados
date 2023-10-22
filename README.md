@@ -5,6 +5,7 @@
 O Raspberry Pi Pico W é uma placa de desenvolvimento baseada no microcontrolador RP2040, que inclui conectividade Wi-Fi e Bluetooth LE e muito mais. Este manual fornece informações importantes para trabalhar com o Raspberry Pi Pico W.
 
 **Especificações**
+
 -Microcontrolador: RP2040
 
 -Conectividade: Wi-Fi e Bluetooth LE (exemplo)
@@ -16,32 +17,57 @@ O Raspberry Pi Pico W é uma placa de desenvolvimento baseada no microcontrolado
 -Dimensões: 51 X 21 mm
 
  **Pinout Padrão**
+ 
 -GPIO (P0-P26)
+
 -LED (LED_GP0 e LED_GP1)
+
 -Boot Select (BOOTSEL)
+
 -VCC (Alimentação) e GND (Terra)
+
 -Antena (ANT)
+
 -USB (USB_DM e USB_DP)
+
 -UART (TX0 e RX0)
--I2C (SDA0 e SCL0
--SPI (SPI0_MISO, SPI0_MOSI, SPI0_SCK e SPI0_CS).
+
+-I2C (SDA0 e SCL0)
+
+-SPI (SPI0_MISO, SPI0_MOSI, SPI0_SCK e SPI0_CS)
+
 -Wi-Fi e Bluetooth (EN_WIFI e EN_BT)
 
 **Alimentação**
+
 -Tensão de Alimentação: 5 V (via USB)
+
 -Consumo de Corrente Típico: O consumo de corrente varia dependendo da carga de trabalho e do estado do dispositivo. Em operação normal, o consumo de corrente é relativamente baixo, mas pode aumentar quando recursos como Wi-Fi e Bluetooth estão ativos.
--Notas: Microcontrolador de baixo consumo de energia (já visto no tópico acima), o que o torna adequado para aplicações com restrições de energia.
+
+-Notas: Microcontrolador de baixo consumo de energia (já visto no tópico acima), o que o torna adequado para aplicações com restrições de energia
+
 **Comunicação**
+
 **UART**
+
 -Pinos: TX, RX
+
 -Baud Rate Suportada: 9600, 115200 e entre outros
+
 **I2C**
+
 -Pinos: SDA, SCL
+
 -Velocidade Suportada: 100 kbps, 400 kbps e entre outros
+
 **SPI**
+
 -Pinos: SCK, MISO, MOSI, CS
+
 -Modos Suportados: Modo 0, Modo 1, etc.
+
 **Programação**
+
 Linguagens Suportadas: MicroPython, C/C++
 
 ## A interface de comunicação entre componentes
@@ -51,22 +77,32 @@ Este tópico irá tratar de maneira mais específica quais são os tipos de inte
 
 ## Prova de conceito na utilização de Bluetooth e Wi-fi com outros dispositivos
 **Objetivo**: Demonstrar como o Raspberry Pi Pico W pode se comunicar com dispositivos móveis via Bluetooth e se conectar a uma rede local via Wi-Fi.
+
 **Materiais Necessários**:
+
 -Raspberry Pi Pico W
+
 -Dispositivo móvel com Bluetooth (por exemplo, smartphone ou tablet)
+
 -Acesso a uma rede Wi-Fi
+
 **Passos**:
+
 **1. Configuração do Bluetooth**:
+
 a. No Raspberry Pi Pico W, certifique-se de que o MicroPython esteja instalado. Você pode usar o MicroPython.uf2 correto e carregá-lo no dispositivo.
+
 b. Crie um programa em MicroPython para ativar a funcionalidade Bluetooth. Um exemplo de código para iniciar o Bluetooth pode ser o seguinte:
 ```
 import bluetooth
 bt = bluetooth.BLE()
 ```
 c. No dispositivo móvel, ative o Bluetooth e pesquise por dispositivos disponíveis. Você deve ver o Raspberry Pi Pico W na lista de dispositivos detectados.
+
 d. Conecte-se ao Raspberry Pi Pico W a partir do dispositivo móvel e inicie a comunicação via Bluetooth.
 
 **2. Configuração do Wi-Fi**:
+
 a. No Raspberry Pi Pico W, crie um programa em MicroPython para configurar a conexão Wi-Fi. Por exemplo:
 ```
 import network ssid = 'RedeArthur'
@@ -76,10 +112,13 @@ wlan.active(True)
 wlan.connect(ssid, password)
 ```
 b. O Raspberry Pi Pico W agora deve estar conectado à rede Wi-Fi especificada.
+
 c. Você pode usar o módulo usocket para criar um servidor TCP ou HTTP que permite que outros dispositivos na rede se comuniquem com o Raspberry Pi Pico W.
 
 **3. Comunicação em Rede**:
+
 a. A partir de um computador ou outro dispositivo na mesma rede Wi-Fi, você pode se comunicar com o Raspberry Pi Pico W usando o endereço IP atribuído a ele.
+
 b. Você pode usar protocolos como HTTP, MQTT, SSH, ou qualquer protocolo que atenda às suas necessidades para transmitir dados entre o Raspberry Pi Pico W e outros sistemas na rede.
 
 
