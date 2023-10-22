@@ -6,69 +6,69 @@ O Raspberry Pi Pico W é uma placa de desenvolvimento baseada no microcontrolado
 
 **Especificações**
 
--Microcontrolador: RP2040
+- Microcontrolador: RP2040
 
--Conectividade: Wi-Fi e Bluetooth LE (exemplo)
+- Conectividade: Wi-Fi e Bluetooth LE (exemplo)
 
--Tensão de Operação: 3,3 V
+- Tensão de Operação: 3,3 V
 
--Interfaces: GPIO, UART, I2C, SPI, PWM
+- Interfaces: GPIO, UART, I2C, SPI, PWM
 
--Dimensões: 51 X 21 mm
+- Dimensões: 51 X 21 mm
 
  **Pinout Padrão**
  
--GPIO (P0-P26)
+- GPIO (P0-P26)
 
--LED (LED_GP0 e LED_GP1)
+- LED (LED_GP0 e LED_GP1)
 
--Boot Select (BOOTSEL)
+- Boot Select (BOOTSEL)
 
--VCC (Alimentação) e GND (Terra)
+- VCC (Alimentação) e GND (Terra)
 
--Antena (ANT)
+- Antena (ANT)
 
--USB (USB_DM e USB_DP)
+- USB (USB_DM e USB_DP)
 
--UART (TX0 e RX0)
+- UART (TX0 e RX0)
 
--I2C (SDA0 e SCL0)
+- I2C (SDA0 e SCL0)
 
--SPI (SPI0_MISO, SPI0_MOSI, SPI0_SCK e SPI0_CS)
+- SPI (SPI0_MISO, SPI0_MOSI, SPI0_SCK e SPI0_CS)
 
--Wi-Fi e Bluetooth (EN_WIFI e EN_BT)
+- Wi-Fi e Bluetooth (EN_WIFI e EN_BT)
 
 **Alimentação**
 
--Tensão de Alimentação: 5 V (via USB)
+- Tensão de Alimentação: 5 V (via USB)
 
--Consumo de Corrente Típico: O consumo de corrente varia dependendo da carga de trabalho e do estado do dispositivo. Em operação normal, o consumo de corrente é relativamente baixo, mas pode aumentar quando recursos como Wi-Fi e Bluetooth estão ativos.
+- Consumo de Corrente Típico: O consumo de corrente varia dependendo da carga de trabalho e do estado do dispositivo. Em operação normal, o consumo de corrente é relativamente baixo, mas pode aumentar quando recursos como Wi-Fi e Bluetooth estão ativos.
 
--Notas: Microcontrolador de baixo consumo de energia (já visto no tópico acima), o que o torna adequado para aplicações com restrições de energia
+- Notas: Microcontrolador de baixo consumo de energia (já visto no tópico acima), o que o torna adequado para aplicações com restrições de energia
 
 **Comunicação**
 
 **UART**
 
--Pinos: TX, RX
+- Pinos: TX, RX
 
--Baud Rate Suportada: 9600, 115200 e entre outros
+- Baud Rate Suportada: 9600, 115200 e entre outros
 
 **I2C**
 
--Pinos: SDA, SCL
+- Pinos: SDA, SCL
 
--Velocidade Suportada: 100 kbps, 400 kbps e entre outros
+- Velocidade Suportada: 100 kbps, 400 kbps e entre outros
 
 **SPI**
 
--Pinos: SCK, MISO, MOSI, CS
+- Pinos: SCK, MISO, MOSI, CS
 
--Modos Suportados: Modo 0 e Modo 1 (exemplo genérico)
+- Modos Suportados: Modo 0 e Modo 1 (exemplo genérico)
 
 **Programação**
 
-Linguagens Suportadas: MicroPython, C/C++
+- Linguagens Suportadas: MicroPython, C/C++
 
 ## A interface de comunicação entre componentes
 Este tópico irá tratar de maneira mais específica quais são os tipos de interfaces de comunicação entre componentes, visto que elas são utilizadas para que diversos componentes se comuniquem entre si, permitindo que os dispositivos de hardware troquem informações com mais facilidade.
@@ -80,11 +80,11 @@ Este tópico irá tratar de maneira mais específica quais são os tipos de inte
 
 **Materiais Necessários**:
 
--Raspberry Pi Pico W
+- Raspberry Pi Pico W
 
--Dispositivo móvel com Bluetooth (por exemplo, smartphone ou tablet)
+- Dispositivo móvel com Bluetooth (por exemplo, smartphone ou tablet)
 
--Acesso a uma rede Wi-Fi
+- Acesso a uma rede Wi-Fi
 
 **Passos**:
 
