@@ -3,12 +3,14 @@
 ## Manual de Referência do Raspberry Pi Pico W
 **Introdução**
 O Raspberry Pi Pico W é uma placa de desenvolvimento baseada no microcontrolador RP2040, que inclui conectividade Wi-Fi e Bluetooth LE e muito mais. Este manual fornece informações importantes para trabalhar com o Raspberry Pi Pico W.
+
 **Especificações**
 -Microcontrolador: RP2040
 -Conectividade: Wi-Fi e Bluetooth LE (exemplo)
 -Tensão de Operação: 3,3 V
 -Interfaces: GPIO, UART, I2C, SPI, PWM
 -Dimensões: 51 X 21 mm
+
  **Pinout Padrão**
 -GPIO (P0-P26)
 -LED (LED_GP0 e LED_GP1)
