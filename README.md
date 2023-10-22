@@ -121,5 +121,8 @@ a. A partir de um computador ou outro dispositivo na mesma rede Wi-Fi, pode se c
 
 b. Pode usar protocolos como HTTP, MQTT, SSH, ou qualquer protocolo que atenda às necessidades para transmitir dados entre o Raspberry Pi Pico W e outros sistemas na rede.
 
+## Referências bibliográficas
+Documento realizado com base na Rapsberry PI Foundation:
+"https://www.raspberrypi.org/".
 
 
