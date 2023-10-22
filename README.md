@@ -64,7 +64,7 @@ O Raspberry Pi Pico W é uma placa de desenvolvimento baseada no microcontrolado
 
 -Pinos: SCK, MISO, MOSI, CS
 
--Modos Suportados: Modo 0, Modo 1, etc.
+-Modos Suportados: Modo 0 e Modo 1 (exemplo genérico)
 
 **Programação**
 
